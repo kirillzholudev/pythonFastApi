@@ -7,8 +7,9 @@ class A:
         self.b = b
         self.c = c
 
+
 # init -->
-@dataclass
+@dataclass(unsafe_hash=True) # hash class
 class B:
     a: int
     b: str
